@@ -1,13 +1,35 @@
- <!DOCTYPE html>
- <head>
-   <title>
-       Chat
-   </title>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- </head>
- <body>
- </body>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- include our dependency on angular -->
+<link rel="stylesheet" type="text/css" href="avatar.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="users.js"></script>
+<script src="index.js"></script>
+  <meta charset="utf-8">
+  <title>Chat</title>
+</head>
+<body>
+  <div class="chat">
+  <div ng-app='app' ng-controller='mainCtrl'> <!-- [1],[2] -->
+      <h1>Chat</h1>
+
+      <form name='userForm' ng-submit='addNew(userForm)'> <!-- [1], [2] -->
+        <input id="button"  placeholder='Name' ng-model='userForm.name'/><br><br> <!-- [3] -->
+        <input id="button" placeholder='Message' ng-model='userForm.message'/><br><br>
+        <button id="button" type='submit'>New Message</button>
+      </form>
+
+      <ul class='User-list'>
+        <li ng-repeat='user in users'>
+           <avatar user='user' />
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
  
   
