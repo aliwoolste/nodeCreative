@@ -22,13 +22,13 @@
   <body>
   <div class="chat">
   <div ng-app='app' ng-controller='mainCtrl'> 
-      <h1>Chat</h1>
+      <h1>Chat</h1><br>
    
         <form name='userForm' ng-submit='addNew(userForm)'> 
            <div class="chat">
               <input id="enterName"  placeholder='Enter Your Name' ng-model='userForm.name'/><br><br>
               <div class="chat-messages"></div>
-              <textarea class="enterMessage" placeholder='Type Your Message' ng-model='userForm.message'/></textarea><br>
+              <textarea class="enterMessage" placeholder='Type Your Message' ng-model='userForm.message'/></textarea><br><br>
 
               <button id="button" type='submit'>Send Message</button>
               <br>
