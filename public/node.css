@@ -53,12 +53,9 @@ align-self: center;
 position: relative;
 	}
 
-	#enterName {
-text-align: center;
+input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    margin-bottom: 13px;
-    margin-top: 1px;
+    font-size: 20px;    
 	border-radius: 25px;
 align-self: center;
 position: relative;
