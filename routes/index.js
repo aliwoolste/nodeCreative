@@ -13,12 +13,12 @@ var messages = [
 ];
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});
+// router.get('/', function(req, res, next) {
+//   res.render('index', { title: 'Express' });
+// });
 
 router.get('/', function(req, res) {
-  res.sendFile('index.html', {root: 'public'});
+  res.sendFile('node.html', {root: 'public'});
 });
 
 router.get('/chat', function(req,res) {
