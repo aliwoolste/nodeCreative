@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- include our dependency on angular -->
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<!-- <script src="users.js"></script> -->
+ <script src="javascripts/app.js"></script> 
+  <meta charset="utf-8">
+  <title>Chat</title>
+</head>
+<body>
+<!-- <body>
+  <div class= "chat">
+    <input type="text" class="chat name" placeholder="Enter your name">
+    <div class="chat messages"></div>
+    <textarea placholder="Type your message"></textarea>
+  </div>
+</body> -->
+  
+
+  <body>
+  <div class="chat">
+  <div ng-app='app' ng-controller='mainCtrl'> 
+      <h1>Chat</h1>
+   
+        <form name='userForm' ng-submit='addNew(userForm)'> 
+          <div class="chat">
+            <input id="button"  placeholder='Enter Your Name' ng-model='userForm.name'/><br><br>
+            <div class="chat-messages"></div>
+                Hello<br>
+                Hello<br>
+                Hello<br>
+            <textarea class="chat-textarea" placeholder='Type Your Message' ng-model='userForm.message'/></textarea>
+        
+            <button id="button" type='submit'>Send Message</button>
+         </div>
+        </form>
+      <ul class='Message-list'>
+        <li ng-repeat='user in users'>
+           <chat user='user' />
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+
+</html>
+ 
