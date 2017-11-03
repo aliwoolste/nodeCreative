@@ -22,7 +22,7 @@
   <body>
   <div class="chat">
   <div ng-app='app' ng-controller='mainCtrl'> 
-      <h1>CHAT</h1>
+      <h1>Chat</h1>
    
         <form name='userForm' ng-submit='addNew(userForm)'> 
            <div class="chat">
@@ -32,12 +32,11 @@
 
               <button id="button" type='submit'>Send Message</button>
               <br>
-              <br>
           <p>Messages </p>
         <!--  </div> -->
         </form>
         <div class="sentMessages"
-            <ul class='Message-list' style="width: 300px; height: 200px; overflow: auto">
+            <ul class='Message-list' style="width: 500px; height: 200px; overflow: auto">
               <li ng-repeat='user in users'>
                  <chat user='user' />
               </li>
