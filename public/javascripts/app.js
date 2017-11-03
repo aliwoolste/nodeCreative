@@ -3,7 +3,7 @@ angular.module('app', [])
 .directive('chat', chatDirective);
 
 
-function mainCtrl ($scope) {
+function mainCtrl ($scope, $http) {
     $scope.users = []; //pushing stuff into array 'users'. i need to send this info to the back end
     $scope.addNew = function(user) {
       var formData = {name: user.name,message:user.message};
