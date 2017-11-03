@@ -19,7 +19,7 @@ font-size: 15px;
 
 max-width: 300px;
 background-color: lightblue;
-	border-radius: 25px;
+	border-radius: 15px;
 }
 /*.chat-messages {
 width: 100%;
@@ -58,4 +58,12 @@ position: relative;
 text-align: center;
 align-self: center
 
+}
+	
+.sentMessages {
+float:left;
+width:1000px;
+overflow-y: auto;
+height: 100px;
+	
 }
