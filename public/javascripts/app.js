@@ -2,18 +2,27 @@ angular.module('app', [])
 .controller('mainCtrl', mainCtrl)
 .directive('chat', chatDirective);
 
-function mainCtrl ($scope) {
 
-$scope.users = [];
-$scope.addNew = function (user) {
-$scope.users.push({ 
-    name: user.name,
-    message: user.message,
-});
-user.name = '';
-  user.message = ''; 
-};
+function mainCtrl ($scope) {
+    $scope.users = []; //pushing stuff into array 'users'. i need to send this info to the back end
+    $scope.addNew = function(user) {
+      var formData = {name: user.name,message:user.message};
+      console.log(formData);
+      var messageURL = 'pokemon';
+      $http({
+         url: messageURL,
+         method: "POST",
+         data: formData
+      }).success(function(data, status, headers, config) {
+        console.log("Post worked");
+          user.message = ''; 
+      }).error(function(data, status, headers, config) {
+        console.log("Post failed");
+      });
+    }
 }
+
+
 function chatDirective () {
 return {
   scope: {
@@ -29,3 +38,4 @@ return {
   ), 
 };
 }
+
