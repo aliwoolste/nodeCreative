@@ -60,6 +60,7 @@ align-self: center
     font-size: 15px;  
 	margin-left: 7px;
 	width: 250px;
+	margin-bottom: 1px;
 }
 
 .Message-list{
@@ -70,11 +71,14 @@ align-self: center
 
 p{
 	margin-left: 7px;
+	<strong>
+	font-size: 15px;
 	
 }
 	
 .sentMessages{
 margin-left: 7px;
+magin-bottom: 7px;
 } 
 
 
