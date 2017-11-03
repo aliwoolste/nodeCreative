@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+<script src="javascripts/app.js"></script>
+<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <meta charset="utf-8">
+  <title>Chat</title>
+</head>
+<body>
+
+  <div id='app' ng-app='app' ng-controller='mainCtrl'>
+
+    <h1>Chat</h1>
+      <form id="newMes" ng-submit="addMes()">
+        Name: <input type="text" ng-model="Name" value=""><br>
+        Message: <input type="text" ng-model="Mes" value=""><br>
+        <input type="submit" value="Submit">
+      </form>
+
+    <ul ng-if='message.length' class='list center stretch'>
+      <li ng-repeat='m in message' class='chat'>
+        <p>{{ m.name }} says "{{ m.mes }}"</p><br>
+      </li>
+    </ul>
+
+  </div>
+
+</body>
+</html>
