@@ -1,15 +1,10 @@
+
 .Message-list {
   list-style: none;
 }
 
 .Avatar {
   text-align: center;  
-}
-
-.Avatar img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
 }
 
 .Avatar h4 {
@@ -19,36 +14,22 @@ font-size: 15px;
 }
 
 .container {
-/* background-image: url('https://static.pexels.com/photos/14676/pexels-photo-14676.png');*/
-/*background-image: url('https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');*/
- background-position-x: 100px;
- background-size: cover;
- background-position: center -200px;
- width: 100vw;
- height:100vh;
-/* flex-direction:column;*/   
-/* position: relative;*/
-   
 }
+.chat{
+max-width: 300px;	
+}
+/*.chat-messages {
+width: 100%;
+height: 300px;
+} */
+.chat-messages,
+.chat-text area,
 
-.container2 {
-
-background-position-x: 100px;
-background-size: cover;
-background-position: center -200px;
-width: 100vw;
-height:100vh;
-flex-direction:column;   
-position: relative;
-background-color: rgba(255,255,255,.2);
-display:flex;
-align-items:center;
-/*justify-content: center;*/
-
+.chat-name {
+border: 1px solid #bbb;
 }
 
 h1{
-
 color:#000000;
 font-size: 50px;
 font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,7 +38,7 @@ align-self: center;
 margin-top: 10px;
 }
 
-#button {
+/* #button {
 text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
@@ -67,18 +48,7 @@ text-align: center;
 align-self: center
 position: relative;
 /*margin-left: 83px;*/
-}
-#button2 {
-text-align: center;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-font-size: 20px;
-margin-bottom: 13px;
-margin-top: 1px;
-border-radius: 25px;
-align-self: center
-position: relative;
-/*margin-left: 130px;*/
-}
+
 
 #userform {
 text-align: center;
