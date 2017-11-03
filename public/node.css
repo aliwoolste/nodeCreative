@@ -63,7 +63,7 @@ align-self: center
 .sentMessages {
 float:left;
 width:1000px;
-overflow-y: auto;
+overflow-y: scroll;
 height: 100px;
 	
 }
