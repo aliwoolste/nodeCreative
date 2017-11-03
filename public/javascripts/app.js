@@ -8,7 +8,7 @@ function mainCtrl ($scope, $http) {
     $scope.addNew = function(user) {
       var formData = {name: user.name,message:user.message};
       console.log(formData);
-      var messageURL = 'pokemon';
+      var messageURL = 'message';
       $http({
          url: messageURL,
          method: "POST",
