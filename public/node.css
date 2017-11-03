@@ -60,7 +60,7 @@ align-self: center
 
 }
 	
-.sentMessages {
+.sentMessages{
 float:left;
 width:1000px;
 overflow-y: scroll;
